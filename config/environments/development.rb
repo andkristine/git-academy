@@ -75,5 +75,7 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
 
-  config.hosts << "port-3000-ruby-white-mouse-mitigate-akademijas-students-8.preview.codeanywhere.com"
+
+    # Whitelisting the CodeAnywhere preview & app domains
+  config.hosts << /.*\.codeany(where|app)\.com/
 end
